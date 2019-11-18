@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <title>Taj Catering</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="top"></div>
+        <nav>
+            <ul id="home-nav">
+                <li class="home"><a href="index.html#home">home</a></li>
+            </ul>
+            <ul id="top-nav">
+                <li class="link"><a href="#about">about</a></li>
+                <li class="link"><a href="#menu">menu</a></li>
+                <li class="link"><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+        <header>
+            <div id="home">
+                <h3> Welcome to Taj!</h3>
+            </div>
+            <!--image for small screens-->
+            <div class="slideshow-container">
+                <div class="header-image">
+                    <img src="images/dosa001.jpg" width="1000" height="500" class="responsive">
+                </div>
+            </div>
+            <!--image slider for large screens-->
+            <div class="slideshow-container slider">
+                <div class="mySlides fade">
+                    <div class="title-text">idilli</div>
+                    <img src="images/idilli002.jpg" width="1000" height="500" class="responsive">
+                </div>
+                <div class="mySlides fade">
+                    <div class="title-text">dosa</div>
+                    <img src="images/dosa001.jpg" width="1000" height="500" class="responsive">
+                </div>
+                <div class="mySlides fade">
+                    <div class="title-text">parata</div>
+                    <img src="images/parata004.jpg" width="1000" height="500" class="responsive">
+                </div>
+                <div class="slide-index-container">
+                    <div style="text-align:center;">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="about-container" id="about">
+                <h3>about taj</h3>
+                <section class="text about-image">
+                    <img src="images/puri.jpg" width="1000" height="500" class="responsive">
+                </section>
+                <section class="text">
+                    <p>
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        It has survived not only five centuries, but also the leap into electronic typesetting,
+                        remaining essentially unchanged.
+                        It was popularised in the 1960s with the release of Letraset sheets containing
+                        Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
+                        including versions of Lorem Ipsum.
+                    </p>
+                </section>
+            </div>
+            <div class="menu-container" id="menu">
+                <h3>our menu</h3>
+                <section class="text menu-card">                   
+                    <p>
+                        <h4 class="menu-title">Daily Special</h4>						
+                        <ul class="menu-list">							
+                            <li class="menu-item">menu one<i>price</i></li>
+                            <li class="menu-item">menu one<i>price</i></li>
+                            <li class="menu-item">menu one<i>price</i></li>
+                            <li class="menu-item">menu one<i>price</i></li>
+                            <li class="menu-item">menu one<i>price</i></li>
+                            <li class="menu-item">menu one<i>price</i></li>
+                            <li class="menu-item">menu one<i>price</i></li>
+                            <li class="menu-item">menu one<i>price</i></li>
+                        </ul>                       
+                    </p>
+                </section>
+                <section class="text">                    
+                    <p>
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        It has survived not only five centuries, but also the leap into electronic typesetting,
+                        remaining essentially unchanged.
+                        It was popularised in the 1960s with the release of Letraset sheets containing
+                        Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
+                        including versions of Lorem Ipsum.
+                    </p>
+                </section>
+            </div>
+            <div class="contact-container" id="contact">
+                <h3>Contact Info</h3>
+                <form>
+                    <div>
+                        Address:345, Park Road,Yangon.<br>
+                        Phone number:959443390095,959443390096(within 7 am to 8pm).<br>
+                        Kindly fill the form to order.
+                    </div>
+                    <div>
+                        <label>your name</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label>email</label>
+                        <input type="email">
+                    </div>
+                    <div>
+                        <label>phone number</label>
+                        <input type="number">
+                    </div>
+                    <div>
+                        <label>menu number</label>
+                        <input type="text">
+                    </div>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <p>
+                developed by jerry &copy; 2019.
+            </p>
+            <p>
+                <a href="#" class="btn-social"><i class="social fa fa-facebook-official"></i></a>
+                <a href="#" class="btn-social"><i class="social fa fa-google-plus-square"> </i></a>
+                <a href="#" class="btn-social"><i class="social fa fa-twitter-square"></i></a>
+                <a href="#" class="btn-social"><i class="social fa fa-whatsapp"></i></a>
+            </p>
+            <span><a href="#top"><i class="fa fa-arrow-circle-up"></i></a></span>
+        </footer>
+    </div>
+    <script src="js/taj.js"></script>
+</body>
+
+</html>
